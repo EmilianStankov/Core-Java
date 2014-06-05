@@ -1,0 +1,11 @@
+package corejava.oopintro;
+
+import java.util.Date;
+
+public class Time {
+    public Date date = new Date();
+    
+    public String toString(){
+        
+    }
+}

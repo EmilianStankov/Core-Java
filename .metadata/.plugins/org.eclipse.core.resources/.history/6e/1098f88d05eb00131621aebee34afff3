@@ -1,0 +1,11 @@
+package corejava.tddintro;
+
+import java.util.Arrays;
+
+public class MaxScalar {
+    public long maxScalarProduct(int[] a, int[] b){
+        Arrays.sort(a);
+        Arrays.sort(b);
+        long sum = 0;
+    }
+}

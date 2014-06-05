@@ -1,0 +1,13 @@
+package corejava.tddintro;
+
+public class join {
+    public String join(String glue, int[] a){
+        String result = "";
+        for (int i = 0; i < a.length; i++) {
+            result += (String) new Integer(a[i]).toString();
+            result += glue;
+        }
+        return result.substring(0, result.length());
+    }
+
+}

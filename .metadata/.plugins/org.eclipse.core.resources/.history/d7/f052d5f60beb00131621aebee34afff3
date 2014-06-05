@@ -1,0 +1,46 @@
+package corejava.tddintro;
+
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+public class ReducePathTestCase {
+    private ReducePath reducePath;
+
+    @Before
+    public void setUp() throws Exception {
+        this.reducePath = new ReducePath();
+    }
+
+    @After
+    public void tearDown() throws Exception {
+    }
+
+    @Test
+    public void testReduceFilePathSingleSlash() {
+        String path = "/";
+        assertEquals("/", reducePath.reducePath(path));
+    }
+    
+    @Test
+    public void testReduceFilePathTwoDots() {
+        String path = "/srv/../";
+        assertEquals("/", reducePath.reducePath(path));
+        >>> reduce_file_path("/srv/www/htdocs/wtf/")
+        "/srv/www/htdocs/wtf"
+        >>> reduce_file_path("/srv/www/htdocs/wtf")
+        "/srv/www/htdocs/wtf"
+        >>> reduce_file_path("/srv/./././././")
+        "/srv"
+        >>> reduce_file_path("/etc//wtf/")
+        "/etc/wtf"
+        >>> reduce_file_path("/etc/../etc/../etc/../")
+        "/"
+        >>> reduce_file_path("//////////////")
+        "/"
+        >>> reduce_file_path("/../")
+    }
+
+}

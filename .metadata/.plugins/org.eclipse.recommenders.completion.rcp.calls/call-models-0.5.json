@@ -1,0 +1,17 @@
+{
+  "/usr/lib/jvm/java-7-openjdk-i386/jre/lib/rt.jar": {
+    "coordinate": "jre:jre:zip:call:1.0.0",
+    "location": "/usr/lib/jvm/java-7-openjdk-i386/jre/lib/rt.jar",
+    "status": "RESOLVED"
+  },
+  "/home/emilian/workspace/TDDIntro/src": {
+    "location": "/home/emilian/workspace/TDDIntro/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/home/emilian/workspace/TDDIntro/src\u0027. Skipped."
+  },
+  "/home/emilian/workspace/OOPFun/src": {
+    "location": "/home/emilian/workspace/OOPFun/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/home/emilian/workspace/OOPFun/src\u0027. Skipped."
+  }
+}

@@ -1,0 +1,8 @@
+package corejava.oopintro;
+
+public abstract class Car {
+    public String brand;
+    public String toString(){
+        return brand;
+    }
+}

@@ -1,0 +1,210 @@
+[
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "d4fdac832191a747d0a50bbfb06ce85c7dca3799",
+    "jarFileModificationDate": "2014-04-25T16:44:49+03:00",
+    "location": "/usr/lib/jvm/java-7-openjdk-i386/jre/lib/resources.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "e72ce80d73cb3556945400a8c20971802246f205",
+    "jarFileModificationDate": "2014-04-25T16:38:33+03:00",
+    "location": "/usr/lib/jvm/java-7-openjdk-i386/jre/lib/ext/sunpkcs11.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "1090175837308811bb8bb8907f7ff90533a1cc2a",
+    "jarFileModificationDate": "2012-01-23T01:44:05+02:00",
+    "location": "/usr/lib/jvm/java-7-openjdk-i386/jre/lib/ext/java-atk-wrapper.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "org.hamcrest.core",
+    "version": {
+      "major": 1,
+      "minor": 3,
+      "micro": 0,
+      "qualifier": "v201303031735"
+    },
+    "jarFileFingerprint": "5ed9fe32ab1d2b18bec7cac0a044090100f327ba",
+    "jarFileModificationDate": "2014-02-24T12:58:53+02:00",
+    "location": "/home/emilian/eclipse/plugins/org.hamcrest.core_1.3.0.v201303031735.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "ed8ffb18c2ae6828c487b0dd175e0a594dfaaaea",
+    "jarFileModificationDate": "2014-04-25T16:38:22+03:00",
+    "location": "/usr/lib/jvm/java-7-openjdk-i386/jre/lib/jce.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "fdd2b0650341bfc3be8cbc5f98d452c1fd894fe6",
+    "jarFileModificationDate": "2014-04-25T16:28:40+03:00",
+    "location": "/usr/lib/jvm/java-7-openjdk-i386/jre/lib/ext/pulse-java.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "edc3e5eca4084ca6274ec90fc860c0e491a1673f",
+    "jarFileModificationDate": "2014-04-25T16:44:49+03:00",
+    "location": "/usr/lib/jvm/java-7-openjdk-i386/jre/lib/jsse.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "junit",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "4e031bb61df09069aeb2bffb4019e7a5034a4ee0",
+    "jarFileModificationDate": "2013-05-17T19:05:12+03:00",
+    "location": "/home/emilian/eclipse/plugins/org.junit_4.11.0.v201303080030/junit.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "ccd151323ac557fe6a84abd7166fdd1e20f07089",
+    "jarFileModificationDate": "2014-04-25T16:38:48+03:00",
+    "location": "/usr/lib/jvm/java-7-openjdk-i386/jre/lib/charsets.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "org.apache.commons.io",
+    "version": {
+      "major": 2,
+      "minor": 4,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "b1b6ea3b7e4aa4f492509a4952029cd8e48019ad",
+    "jarFileModificationDate": "2014-05-31T12:38:13+03:00",
+    "location": "/home/emilian/workspace/Debugging/libs/commons-io-2.4.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "7ea81b1e67afdcc48f3a083afa08bc56d5f4692c",
+    "jarFileModificationDate": "2014-04-25T16:38:51+03:00",
+    "location": "/usr/lib/jvm/java-7-openjdk-i386/jre/lib/ext/localedata.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "aaed333283c4747d30c198b8f61c8a9f98904312",
+    "jarFileModificationDate": "2014-04-25T16:38:41+03:00",
+    "location": "/usr/lib/jvm/java-7-openjdk-i386/jre/lib/ext/dnsns.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "75dc91482d9612ca09f0cdedd08b4a459e28e143",
+    "jarFileModificationDate": "2014-04-25T16:44:49+03:00",
+    "location": "/usr/lib/jvm/java-7-openjdk-i386/jre/lib/rhino.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "68170dcb08036951d6d9380c378c24c60eddd9d0",
+    "jarFileModificationDate": "2014-04-25T16:40:11+03:00",
+    "location": "/usr/lib/jvm/java-7-openjdk-i386/jre/lib/ext/sunjce_provider.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "96c5a39615caff21b67c5f76fbf34bc831072d3e",
+    "jarFileModificationDate": "2014-04-25T16:44:49+03:00",
+    "location": "/usr/lib/jvm/java-7-openjdk-i386/jre/lib/rt.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "466a58fd70b43edbd49928a34047f5bd83246b6f",
+    "jarFileModificationDate": "2014-04-25T16:40:41+03:00",
+    "location": "/usr/lib/jvm/java-7-openjdk-i386/jre/lib/ext/zipfs.jar",
+    "javaRuntime": true
+  }
+]

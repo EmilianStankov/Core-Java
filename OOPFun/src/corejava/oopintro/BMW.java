@@ -1,0 +1,12 @@
+package corejava.oopintro;
+
+public class BMW extends Car {
+
+    public String brand = "BMW";
+
+    @Override
+    public String toString() {
+        return this.brand;
+    }
+
+}

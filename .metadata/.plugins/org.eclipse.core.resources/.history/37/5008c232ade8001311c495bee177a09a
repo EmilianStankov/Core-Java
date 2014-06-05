@@ -1,0 +1,13 @@
+package com.hackbulgaria.corejava;
+
+public class FaultyProblem1 {
+    public long getLargestPalindrome(long N) {
+        if (Utils.isPalindrome(N)) {
+            return N;
+        } else {
+            N--;
+            return getLargestPalindrome(N - 1);
+        }
+    }
+
+}

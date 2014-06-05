@@ -1,0 +1,19 @@
+package corejava.oopintro;
+
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+
+public class Time {
+    Calendar date = Calendar.getInstance();
+    final String day = new Integer(date.DAY_OF_MONTH).toString();
+    final int currentHour = date.HOUR_OF_DAY;
+    final int currentMinute = date.MINUTE;
+    final int currentSecond = date.SECOND;
+    public String now(){
+        return date.getTime().toString();
+    }
+    
+    public String toString() {
+        return day + "." + new Integer(date.MONTH).toString();
+    }
+}

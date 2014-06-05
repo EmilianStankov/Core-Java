@@ -1,0 +1,26 @@
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+import corejava.oopintro.Lada;
+
+
+public class CarTestCases {
+
+    @Before
+    public void setUp() throws Exception {
+        Lada lada = new Lada();
+    }
+
+    @After
+    public void tearDown() throws Exception {
+    }
+
+    @Test
+    public void test() {
+        assertEquals("Lada", lada.lada.toString)
+    }
+
+}

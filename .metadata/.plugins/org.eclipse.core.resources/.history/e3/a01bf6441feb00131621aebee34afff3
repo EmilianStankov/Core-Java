@@ -1,0 +1,16 @@
+package corejava.oopintro;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class Time {
+    public Date date = new Date();
+    
+    public String now(){
+        return new Long(date.getTime()).toString();
+    }
+
+    public String toString() {
+        return "";
+    }
+}

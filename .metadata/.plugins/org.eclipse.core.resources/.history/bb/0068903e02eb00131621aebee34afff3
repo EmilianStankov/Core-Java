@@ -1,0 +1,6 @@
+
+public class MaxScalar {
+    public static long maxScalarProduct(int){
+        return -1;
+    }
+}

@@ -1,0 +1,36 @@
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+import corejava.oopintro.Chevrolet;
+import corejava.oopintro.Lada;
+
+
+public class CarTestCases {
+
+    private Lada lada;
+    private Chevrolet chevrolet;
+
+    @Before
+    public void setUp() throws Exception {
+        this.lada = new Lada();
+        this.chevrolet = new Chevrolet();
+    }
+
+    @After
+    public void tearDown() throws Exception {
+    }
+
+    @Test
+    public void testLadaToString() {
+        assertEquals("Lada", lada.toString());
+    }
+    
+    @Test
+    public void testChevroletToString() {
+        assertEquals("Chevrolet", lada.toString());
+    }
+
+}

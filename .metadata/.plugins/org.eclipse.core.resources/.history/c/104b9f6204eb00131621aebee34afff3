@@ -1,0 +1,7 @@
+package corejava.tddintro;
+
+public class MaxScalar {
+    public static long maxScalarProduct(int n){
+        return -1;
+    }
+}

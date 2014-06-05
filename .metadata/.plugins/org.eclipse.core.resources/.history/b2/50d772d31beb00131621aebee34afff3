@@ -1,0 +1,5 @@
+package corejava.oopintro;
+
+public class Chevrolet extends Car {
+    public String brand = "Chevrolet";
+}

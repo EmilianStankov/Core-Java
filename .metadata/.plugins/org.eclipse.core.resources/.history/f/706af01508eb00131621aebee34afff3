@@ -1,0 +1,8 @@
+package corejava.tddintro;
+
+public class join {
+    public join(String a){
+        return "";
+    }
+
+}

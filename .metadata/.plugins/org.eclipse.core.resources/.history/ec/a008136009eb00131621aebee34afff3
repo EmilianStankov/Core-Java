@@ -1,0 +1,8 @@
+package corejava.tddintro;
+
+public class join {
+    public String join(String glue, int[] a){
+        return "";
+    }
+
+}

@@ -1,0 +1,25 @@
+package corejava.tddintro;
+
+public class ReducePath {
+    public String reducePath(String path) {
+        String newPath = "/";
+        String[] dirs = path.split("/");
+        for (int i = 1; i < dirs.length - 1; i++) {
+            if (!dirs[i + 1].equals("..") && !dirs[i].equals(".") && !dirs[i].equals("")) {
+                newPath += dirs[i];
+                newPath += "/";
+            }
+        }
+        for (int i = 1; i < dirs.length; i++) {
+            if (!dirs[i].equals(".")) {
+                System.out.println(dirs[i]);
+            }
+        }
+        if (!dirs[dirs.length - 1].equals("..") && !dirs[dirs.length - 1].equals(".")) {
+            newPath += dirs[dirs.length - 1];
+            return newPath.substring(0, newPath.length());
+        }
+        if(newPath.equals("/"))
+        return newPath.substring(0, newPath.length() - 1);
+    }
+}
