@@ -4,18 +4,32 @@ import java.util.Calendar;
 
 public class Time {
     Calendar date = Calendar.getInstance();
-    final int day = date.get(Calendar.DAY_OF_MONTH);
-    final int month = date.get(Calendar.MONTH);
-    final int year = date.get(Calendar.YEAR);
-    final int currentHour = date.get(Calendar.HOUR_OF_DAY);
-    final int currentMinute = date.get(Calendar.MINUTE);
-    final int currentSecond = date.get(Calendar.SECOND);
+    int day, month, year, currentHour, currentMinute, currentSecond;
+
+    public Time(int hours, int minutes) {
+        day = date.get(Calendar.DAY_OF_MONTH);
+        month = date.get(Calendar.MONTH);
+        year = date.get(Calendar.YEAR) - 2000;
+        currentHour = hours;
+        currentMinute = minutes;
+        currentSecond = 0;
+    }
+
+    public Time() {
+        day = date.get(Calendar.DAY_OF_MONTH);
+        month = date.get(Calendar.MONTH);
+        year = date.get(Calendar.YEAR) - 2000;
+        currentHour = date.get(Calendar.HOUR_OF_DAY);
+        currentMinute = date.get(Calendar.MINUTE);
+        currentSecond = date.get(Calendar.SECOND);
+    }
 
     public String now() {
         return date.getTime().toString();
     }
 
     public String toString() {
-        return String.format("%d:%d:%d %d.%d.%d", currentHour, currentMinute, currentSecond, day, month, year);
+        return String.format("%02d:%02d:%02d %02d.%02d.%02d", this.currentHour, this.currentMinute, this.currentSecond,
+                this.day, this.month, this.year);
     }
 }

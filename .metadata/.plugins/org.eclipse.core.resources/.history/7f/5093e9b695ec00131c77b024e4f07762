@@ -1,0 +1,35 @@
+package corejava.oopintro;
+
+import java.util.Calendar;
+
+public class Time {
+    Calendar date = Calendar.getInstance();
+    int day, month, year, currentHour, currentMinute, currentSecond;
+
+    public Time(int hours, int minutes) {
+        day = date.get(Calendar.DAY_OF_MONTH);
+        month = date.get(Calendar.MONTH);
+        year = date.get(Calendar.YEAR) - 2000;
+        currentHour = hours;
+        currentMinute = minutes;
+        currentSecond = date.get(Calendar.SECOND);
+    }
+
+    public Time() {
+        day = date.get(Calendar.DAY_OF_MONTH);
+        month = date.get(Calendar.MONTH);
+        year = date.get(Calendar.YEAR) - 2000;
+        currentHour = date.get(Calendar.HOUR_OF_DAY);
+        currentMinute = date.get(Calendar.MINUTE);
+        currentSecond = date.get(Calendar.SECOND);
+    }
+
+    public String now() {
+        return date.getTime().toString();
+    }
+
+    public String toString() {
+        return String.format("%02d:%02d:%02d %02d.%02d.%02d", this.currentHour, this.currentMinute, this.currentSecond,
+                this.day, this.month, this.year);
+    }
+}
