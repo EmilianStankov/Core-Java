@@ -13,5 +13,10 @@
     "location": "/home/emilian/workspace/OOPFun/src",
     "status": "UNRESOLVED",
     "error": "No class path info available for \u0027/home/emilian/workspace/OOPFun/src\u0027. Skipped."
+  },
+  "/home/emilian/workspace/Collections1/src": {
+    "location": "/home/emilian/workspace/Collections1/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/home/emilian/workspace/Collections1/src\u0027. Skipped."
   }
 }
