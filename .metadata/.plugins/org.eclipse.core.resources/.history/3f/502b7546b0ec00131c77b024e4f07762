@@ -1,0 +1,36 @@
+package corejava.oopintro;
+
+public class Matrix implements MatrixOperation {
+    private int[][] matrix;
+    private int width;
+    private int height;
+
+    public Matrix(int n, int m) {
+        width = n;
+        height = m;
+        matrix = new int[n][m];
+    }
+
+    @Override
+    public int withPixel(int x, int y, int[][] matrix) {
+        return matrix[x][y];
+    }
+
+    public void operate(MatrixOperation op) {
+        for (int i = 0; i < this.width; i++) {
+            for (int j = 0; j < this.height; j++) {
+                op.withPixel(i, j, this.matrix);
+            }
+        }
+    }
+    //all neighbours
+    //for(int i = -1; inBounds(x+i, y+j);i++){
+    //    for(int j = -1; j < 2;j++){
+    //        if(i==0 && j==0) continue;
+    //        if(matrix[x+i][y+j]) neighbours++;
+    //    }
+    //}
+    boolean inBounds(x,y){
+        return 0 <=x && x<matrix.length && 0 <=y && y< matrix[0].length;
+    }
+} 

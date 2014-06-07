@@ -1,0 +1,12 @@
+package corejava.oopintro;
+
+public class StackImpl {
+    
+    public StackImpl(Object...)
+
+    public Object length() {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+}

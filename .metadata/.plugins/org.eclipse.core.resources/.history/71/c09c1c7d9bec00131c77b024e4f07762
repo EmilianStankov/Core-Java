@@ -1,0 +1,13 @@
+package corejava.oopintro;
+
+public class StackImpl implements Stack{
+    
+    public StackImpl(Object... obj) {
+        Object[] = new Object[obj.length];
+    }
+
+    public int length() {
+        
+    }
+
+}

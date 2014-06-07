@@ -1,0 +1,28 @@
+package corejava.oopintro;
+
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+public class StackImplTestCases {
+
+    private StackImpl stack;
+
+    @Before
+    public void setUp() throws Exception {
+        stack = new StackImpl();
+        stack2 = new StackImpl(1, 2, 3)
+    }
+
+    @After
+    public void tearDown() throws Exception {
+    }
+
+    @Test
+    public void testGetLength() {
+        assertEquals(0, stack.length());
+    }
+
+}

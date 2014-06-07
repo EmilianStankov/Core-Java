@@ -1,0 +1,53 @@
+package corejava.oopintro;
+
+import java.util.ArrayList;
+
+public class StackImpl implements Stack {
+
+    private ArrayList<Object> elements;
+
+    public StackImpl(Object... obj) {
+        elements = new ArrayList<Object>();
+        if (obj.length > 0) {
+            for (int i = 0; i < obj.length; i++) {
+                elements.add(obj);
+            }
+        }
+    }
+
+    @Override
+    public int length() {
+        return elements.size();
+    }
+
+    @Override
+    public void push(Object obj) {
+        elements.add(obj);
+    }
+
+    @Override
+    public void pop() {
+        elements.remove(elements.size() - 1);
+    }
+
+    @Override
+    public void clear() {
+        for (int i = 0; i < elements.length; i++) {
+            elements.remove(element);
+        }
+    }
+
+    @Override
+    public boolean isEmpty() {
+        if (this.length() == 0) {
+            return true;
+        }
+        return false;
+    }
+
+    @Override
+    public ArrayList<Object> getElements() {
+        return this.elements;
+    }
+
+}

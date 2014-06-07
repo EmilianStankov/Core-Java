@@ -1,0 +1,43 @@
+package corejava.oopintro;
+
+import java.util.ArrayList;
+
+public class StackNoRepeat implements Stack {
+
+    @Override
+    public void push(Object obj) {
+        // TODO Auto-generated method stub
+
+    }
+
+    @Override
+    public void pop() {
+        // TODO Auto-generated method stub
+
+    }
+
+    @Override
+    public void clear() {
+        // TODO Auto-generated method stub
+
+    }
+
+    @Override
+    public int length() {
+        // TODO Auto-generated method stub
+        return 0;
+    }
+
+    @Override
+    public ArrayList<Object> getElements() {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+    @Override
+    public boolean isEmpty() {
+        // TODO Auto-generated method stub
+        return false;
+    }
+
+}

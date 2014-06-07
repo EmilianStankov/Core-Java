@@ -6,10 +6,10 @@ public class Time {
     Calendar date = Calendar.getInstance();
     int day, month, year, currentHour, currentMinute, currentSecond;
 
-    public Time(int hours, int minutes) {
-        day = date.get(Calendar.DAY_OF_MONTH);
-        month = date.get(Calendar.MONTH);
-        year = date.get(Calendar.YEAR) - 2000;
+    public Time(int hours, int minutes, int m, int d, int y) {
+        day = d;
+        month = m;
+        year = y - 2000;
         currentHour = hours;
         currentMinute = minutes;
         currentSecond = 0;

@@ -1,0 +1,15 @@
+package corejava.oopintro;
+
+public interface Stack {
+    public void push(Object obj);
+    
+    public void pop();
+    
+    public void clear(Object obj);
+    
+    public int length();
+    
+    public ArrayList<Object[]>
+    
+    public boolean isEmpty();
+}

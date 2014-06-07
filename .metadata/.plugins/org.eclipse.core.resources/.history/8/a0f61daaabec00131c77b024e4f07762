@@ -1,0 +1,14 @@
+package corejava.oopintro;
+
+public class Matrix implements MatrixOperation {
+    private int[][] matrix;
+
+    public Matrix(int n, int m) {
+        matrix = new int[n][m];
+    }
+
+    @Override
+    public int withPixel(int x, int y, matrix) {
+        return matrix[x][y];
+    }
+}

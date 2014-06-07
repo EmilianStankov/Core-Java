@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="StackImplTestCases" project="OOPFun" tests="3" started="3" failures="0" errors="0" ignored="0">
+  <testsuite name="corejava.oopintro.StackImplTestCases" time="0.002">
+    <testcase name="testPop" classname="corejava.oopintro.StackImplTestCases" time="0.0"/>
+    <testcase name="testPush" classname="corejava.oopintro.StackImplTestCases" time="0.0"/>
+    <testcase name="testGetLength" classname="corejava.oopintro.StackImplTestCases" time="0.0"/>
+  </testsuite>
+</testrun>

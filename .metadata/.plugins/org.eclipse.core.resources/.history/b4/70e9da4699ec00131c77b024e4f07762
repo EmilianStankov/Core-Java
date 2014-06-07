@@ -1,0 +1,20 @@
+package corejava.oopintro;
+
+public class Pair {
+
+    private Object firstElement;
+
+    public Pair(Object first, Object second) {
+        final Object firstElement = first;
+        final Object secondElement = second;
+    }
+
+    public Object getFirst() {
+        return this.firstElement;
+    }
+
+    public Object getSecond() {
+        return this.secondElement;
+    }
+
+}

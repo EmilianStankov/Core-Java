@@ -1,0 +1,38 @@
+package corejava.oopintro;
+
+public class StackImpl implements Stack{
+    
+    public StackImpl(Object... obj) {
+        Object[] elements = new Object[obj.length];
+    }
+    
+    @Override
+    public int length() {
+        return elements.length()
+    }
+
+    @Override
+    public void push(Object o) {
+        // TODO Auto-generated method stub
+        
+    }
+
+    @Override
+    public void pop(Object o) {
+        // TODO Auto-generated method stub
+        
+    }
+
+    @Override
+    public void clear(Object o) {
+        // TODO Auto-generated method stub
+        
+    }
+
+    @Override
+    public boolean isEmpty() {
+        // TODO Auto-generated method stub
+        return false;
+    }
+
+}

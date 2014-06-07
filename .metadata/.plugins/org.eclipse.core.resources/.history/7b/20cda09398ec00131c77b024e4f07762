@@ -1,0 +1,26 @@
+package corejava.oopintro;
+
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+public class PairTestCases {
+    
+
+    @Before
+    public void setUp() throws Exception {
+        pair = new Pair(1,2);
+    }
+
+    @After
+    public void tearDown() throws Exception {
+    }
+
+    @Test
+    public void testAreEqual() {
+        AssertEquals(pair1, pair2);
+    }
+
+}

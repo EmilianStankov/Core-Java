@@ -1,0 +1,11 @@
+package corejava.oopintro;
+
+public interface Stack {
+    public void push(Object o);
+    
+    public void pop(Object o);
+    
+    public void clear(Object o);
+    
+    public int length()l
+}

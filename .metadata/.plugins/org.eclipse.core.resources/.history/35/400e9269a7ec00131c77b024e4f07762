@@ -1,0 +1,30 @@
+package corejava.oopintro;
+
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+public class StackNoRepeatTestCases {
+    
+    private StackNoRepeat stack;
+    private StackNoRepeat stack2;
+
+    @Before
+    public void setUp() throws Exception {
+        stack = new StackNoRepeat();
+        stack2 = new StackNoRepeat(1, 2, 3);
+    }
+
+    @After
+    public void tearDown() throws Exception {
+    }
+
+    @Test
+    public void testCantAddElement() {
+        stack2.push(1);
+        assertEquals()
+    }
+
+}

@@ -1,0 +1,7 @@
+package corejava.oopintro;
+
+public class Matrix implements MatrixOperation {
+    public Matrix(int n, int m) {
+        int[][] matrix = new int[n][m];
+    }
+}

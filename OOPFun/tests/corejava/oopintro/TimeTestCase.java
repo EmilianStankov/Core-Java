@@ -1,0 +1,31 @@
+package corejava.oopintro;
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+import corejava.oopintro.Time;
+
+
+public class TimeTestCase {
+
+    private Time time1;
+    private Time time2;
+
+    @Before
+    public void setUp() throws Exception {
+        this.time1 = new Time();
+        this.time2 = new Time(20, 13, 5, 6, 2014);
+    }
+
+    @After
+    public void tearDown() throws Exception {
+    }
+
+    @Test
+    public void test() {
+        assertEquals("20:13:00 06.05.14", time2.toString());
+    }
+
+}

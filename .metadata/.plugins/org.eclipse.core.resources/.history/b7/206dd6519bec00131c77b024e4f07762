@@ -1,0 +1,14 @@
+package corejava.oopintro;
+
+public class StackImpl implements Stack{
+    
+    public StackImpl(Object... obj) {
+        
+    }
+
+    int length() {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+}

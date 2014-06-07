@@ -1,0 +1,62 @@
+package corejava.oopintro;
+
+import java.util.ArrayList;
+
+public class StackNoRepeat implements Stack {
+
+    private ArrayList<Object> elements;
+
+    public StackNoRepeat(Object... obj) {
+        elements = new ArrayList<Object>();
+        if (obj.length > 0) {
+            for (int i = 0; i < obj.length; i++) {
+                if (!elements.contains(obj)) {
+                    elements.add(obj);
+                } else {
+                    System.out.println("Already in stack!" + obj[i]);
+                }
+            }
+        }
+    }
+
+    @Override
+    public int length() {
+        return elements.size();
+    }
+
+    @Override
+    public void push(Object obj) {
+        boolean contains = elements.contains(obj);
+        if (!elements.contains(obj)) {
+            elements.add(obj);
+        } else {
+            System.out.println("Already in stack!");
+        }
+    }
+
+    @Override
+    public void pop() {
+        elements.remove(elements.size() - 1);
+    }
+
+    @Override
+    public void clear() {
+        for (int i = elements.size() - 1; i >= 0; i--) {
+            elements.remove(i);
+        }
+    }
+
+    @Override
+    public boolean isEmpty() {
+        if (this.length() == 0) {
+            return true;
+        }
+        return false;
+    }
+
+    @Override
+    public ArrayList<Object> getElements() {
+        return this.elements;
+    }
+
+}
