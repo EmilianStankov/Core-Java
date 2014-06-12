@@ -13,4 +13,8 @@
 <typeInfo handle="=Collections1/\/usr\/lib\/jvm\/java-7-openjdk-i386\/jre\/lib\/rt.jar&lt;java.util(Arrays$ArrayList.class[ArrayList" modifiers="10" timestamp="1398433489000"/>
 <typeInfo handle="=Collections1/\/usr\/lib\/jvm\/java-7-openjdk-i386\/jre\/lib\/rt.jar&lt;java.util(ArrayList.class[ArrayList" modifiers="33" timestamp="1398433489000"/>
 <typeInfo handle="=Collections1/\/usr\/lib\/jvm\/java-7-openjdk-i386\/jre\/lib\/rt.jar&lt;java.util(AbstractList.class[AbstractList" modifiers="1057" timestamp="1398433489000"/>
+<typeInfo handle="=Collections1/src&lt;corejava.collections{MyUtil.java[MyUtil" modifiers="1" timestamp="1402395958000"/>
+<typeInfo handle="=Collections1/\/usr\/lib\/jvm\/java-7-openjdk-i386\/jre\/lib\/rt.jar&lt;java.util(Queue.class[Queue" modifiers="1537" timestamp="1398433489000"/>
+<typeInfo handle="=Collections1/src&lt;corejava.collections{BoundedQueue.java[BoundedQueue" modifiers="1" timestamp="1402398776000"/>
+<typeInfo handle="=Collections1/\/usr\/lib\/jvm\/java-7-openjdk-i386\/jre\/lib\/rt.jar&lt;java.lang(Comparable.class[Comparable" modifiers="1537" timestamp="1398433489000"/>
 </typeInfoHistroy>
