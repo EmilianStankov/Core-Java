@@ -1,10 +1,10 @@
 package corejava.exam1;
 
 public class Logger {
-    private int LEVEL;
+    protected int LEVEL;
 
     Logger() {
-        LEVEL = 3;
+        this.LEVEL = 3;
     }
 
     Logger(int level) throws InvalidLevelException {
@@ -12,7 +12,7 @@ public class Logger {
             if (level <= 0) {
                 throw new InvalidLevelException();
             }
-            LEVEL = level;
+            this.LEVEL = level;
         } catch (InvalidLevelException e) {
             e.printStackTrace();
         }
@@ -25,7 +25,7 @@ public class Logger {
     public void log(int level, String message) throws InvalidLevelException {
         try {
             if (level <= LEVEL && level > 0) {
-                System.out.println(level + " => " + message);
+                System.out.println(String.format("%d => %s", level, message));
             } else if (level <= 0) {
                 throw new InvalidLevelException();
             }
@@ -37,7 +37,7 @@ public class Logger {
     public void log(String message) {
         int level = 3;
         if (level <= LEVEL) {
-            System.out.println(level + " => " + message);
+            System.out.println(String.format("%d => %s", level, message));
         }
     }
 

@@ -3,21 +3,12 @@ package corejava.exam1;
 import java.util.Calendar;
 
 public class DateLogger extends Logger {
-    private int LEVEL;
-
     DateLogger() {
-        LEVEL = 3;
+        super();
     }
 
     DateLogger(int level) throws InvalidLevelException {
-        try {
-            if (level <= 0) {
-                throw new InvalidLevelException();
-            }
-            LEVEL = level;
-        } catch (InvalidLevelException e) {
-            e.printStackTrace();
-        }
+        super(level);
     }
     
     public String date() {
@@ -36,7 +27,7 @@ public class DateLogger extends Logger {
     public void log(int level, String message) throws InvalidLevelException {
         try {
             if (level <= LEVEL && level > 0) {
-                System.out.println(date() + level + " => " + message);
+                System.out.println(String.format("|%s| %d => %s", date() ,level , message));
             } else if (level <= 0) {
                 throw new InvalidLevelException();
             }
@@ -49,7 +40,7 @@ public class DateLogger extends Logger {
     public void log(String message) {
         int level = 3;
         if (level <= LEVEL) {
-            System.out.println("|" + date() + "| " + level + " => " + message);
+            System.out.println(String.format("|%s| %d => %s", date(), level, message));
         }
     }
 
