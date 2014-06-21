@@ -13,13 +13,11 @@ import org.junit.Test;
 
 public class SortTestCases {
     
-    private MyUtil util;
     private List<Integer> a;
     private List<Integer> result;
 
     @Before
     public void setUp() throws Exception {
-        util = new MyUtil();
         result = new ArrayList<Integer>();
         result.add(-1);
         result.add(2);
@@ -38,7 +36,7 @@ public class SortTestCases {
         a.add(7);
         a.add(2);
         a.add(-1);
-        assertEquals(result, util.sort(a));
+        assertEquals(result, MyUtil.sort(a));
     }
 
     @Test
@@ -48,7 +46,7 @@ public class SortTestCases {
         a.add(7);
         a.add(2);
         a.add(-1);
-        assertEquals(result, util.sort(a));
+        assertEquals(result, MyUtil.sort(a));
     }
 
     @Test
@@ -58,6 +56,6 @@ public class SortTestCases {
         a.add(7);
         a.add(2);
         a.add(-1);
-        assertEquals(result, util.sort(a));
+        assertEquals(result, MyUtil.sort(a));
     }
 }

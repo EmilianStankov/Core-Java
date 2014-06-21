@@ -2,49 +2,45 @@ package corejava.exam1;
 
 public class Logger {
     protected int LEVEL;
+    protected final int DEFAULT_LEVEL = 3;
 
-    Logger() {
-        this.LEVEL = 3;
+    public Logger() {
+        this.LEVEL = DEFAULT_LEVEL;
     }
 
-    Logger(int level) throws InvalidLevelException {
-        try {
-            if (level <= 0) {
-                throw new InvalidLevelException();
-            }
+    public Logger(int level) {
+        if (level <= 0) {
+            throw new InvalidLevelException();
+        } else {
             this.LEVEL = level;
-        } catch (InvalidLevelException e) {
-            e.printStackTrace();
         }
     }
 
-    public void setLevel(int newLevel) throws InvalidLevelException {
-        this.LEVEL = newLevel;
+    public void setLevel(int newLevel) {
+        if (newLevel <= 0) {
+            throw new InvalidLevelException();
+        } else {
+            this.LEVEL = newLevel;
+        }
     }
 
-    public void log(int level, String message) throws InvalidLevelException {
-        try {
-            if (level <= LEVEL && level > 0) {
-                System.out.println(String.format("%d => %s", level, message));
-            } else if (level <= 0) {
-                throw new InvalidLevelException();
-            }
-        } catch (InvalidLevelException e) {
-            e.printStackTrace();
+    public void log(int level, String message){
+        if (level <= LEVEL && level > 0) {
+            System.out.println(String.format("%d => %s", level, message));
+        } else if (level <= 0) {
+            throw new InvalidLevelException();
         }
     }
 
     public void log(String message) {
-        int level = 3;
-        if (level <= LEVEL) {
-            System.out.println(String.format("%d => %s", level, message));
-        }
+        int level = DEFAULT_LEVEL;
+        log(level, message);
     }
 
     public static void main(String[] args) {
         Logger logger = new Logger(3); // set LEVEL to 3
-        Logger invalidLogger = new Logger(-1); // throws exception
-        invalidLogger.log(-1, "duh"); // wont be logged
+        //Logger invalidLogger = new Logger(-1); // throws exception
+        //invalidLogger.log(-1, "duh"); // wont be logged
 
         logger.log(2, "Somewhat important message"); // gets logged as
                                                      // "2 => Somewhat important message"

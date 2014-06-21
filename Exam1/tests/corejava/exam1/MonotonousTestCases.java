@@ -13,14 +13,12 @@ import org.junit.Test;
 
 public class MonotonousTestCases {
 
-    private MyUtil util;
     private List<Integer> list;
     private Vector<Integer> vector;
     private Stack<Integer> stack;
 
     @Before
     public void setUp() throws Exception {
-        util = new MyUtil();
         list = new ArrayList<Integer>();
         vector = new Vector<Integer>();
         stack = new Stack<Integer>();
@@ -37,7 +35,7 @@ public class MonotonousTestCases {
         list.add(7);
         list.add(100);
         list.add(5);
-        assertFalse(util.isMonotonous(list));
+        assertFalse(MyUtil.isMonotonous(list));
     }
 
     @Test
@@ -47,7 +45,7 @@ public class MonotonousTestCases {
         vector.add(7);
         vector.add(889);
         vector.add(0);
-        assertFalse(util.isMonotonous(vector));
+        assertFalse(MyUtil.isMonotonous(vector));
     }
 
     @Test
@@ -57,7 +55,7 @@ public class MonotonousTestCases {
         stack.add(7);
         stack.add(1);
         stack.add(-5);
-        assertFalse(util.isMonotonous(stack));
+        assertFalse(MyUtil.isMonotonous(stack));
     }
 
     @Test
@@ -67,7 +65,7 @@ public class MonotonousTestCases {
         stack.add(7);
         stack.add(8);
         stack.add(9);
-        assertTrue(util.isMonotonous(stack));
+        assertTrue(MyUtil.isMonotonous(stack));
     }
 
     @Test
@@ -77,7 +75,7 @@ public class MonotonousTestCases {
         vector.add(1);
         vector.add(0);
         vector.add(-1);
-        assertTrue(util.isMonotonous(vector));
+        assertTrue(MyUtil.isMonotonous(vector));
     }
 
     @Test
@@ -87,7 +85,7 @@ public class MonotonousTestCases {
         list.add(2);
         list.add(2);
         list.add(3);
-        assertTrue(util.isMonotonous(list));
+        assertTrue(MyUtil.isMonotonous(list));
     }
 
 }

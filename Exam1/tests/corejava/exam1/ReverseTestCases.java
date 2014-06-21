@@ -13,13 +13,11 @@ import org.junit.Test;
 
 public class ReverseTestCases {
 
-    private MyUtil util;
     private List<Integer> a;
     private List<Integer> result;
 
     @Before
     public void setUp() throws Exception {
-        util = new MyUtil();
         result = new ArrayList<Integer>();
         result.add(-1);
         result.add(2);
@@ -40,7 +38,7 @@ public class ReverseTestCases {
         a.add(7);
         a.add(2);
         a.add(-1);
-        assertEquals(result, util.reverse(a));
+        assertEquals(result, MyUtil.reverse(a));
     }
     
     @Test
@@ -51,7 +49,7 @@ public class ReverseTestCases {
         a.add(7);
         a.add(2);
         a.add(-1);
-        assertEquals(result, util.reverse(a));
+        assertEquals(result, MyUtil.reverse(a));
     }
     
     @Test
@@ -62,7 +60,7 @@ public class ReverseTestCases {
         a.add(7);
         a.add(2);
         a.add(-1);
-        assertEquals(result, util.reverse(a));
+        assertEquals(result, MyUtil.reverse(a));
     }
 
 }
