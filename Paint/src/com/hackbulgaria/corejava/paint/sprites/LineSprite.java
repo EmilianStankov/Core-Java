@@ -7,11 +7,11 @@ public class LineSprite extends Sprite {
 
     private int x2;
     private int y2;
-    
+
     public LineSprite(int x, int y, int x2, int y2, int size, Color color) {
         super(x, y, size, color);
-        this.x2=x2;
-        this.y2=y2;
+        this.x2 = x2;
+        this.y2 = y2;
     }
 
     @Override
