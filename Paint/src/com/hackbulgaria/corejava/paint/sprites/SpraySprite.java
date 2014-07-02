@@ -20,7 +20,7 @@ public class SpraySprite extends Sprite {
         graphics.fillOval(x, y, size, size);
         for (int i = -this.radius; i < this.radius; i++) {
             for (int j = -this.radius; j < this.radius; j++) {
-                chance = rd.nextInt(100) - Math.abs(i - j) - Math.abs(i + j) - Math.abs(i) - Math.abs(j);
+                chance = rd.nextInt(100) - Math.abs(i - j) - Math.abs(i + j) - Math.abs(i) - Math.abs(j) + radius;
                 if (chance >= 50) {
                     graphics.fillOval(x + i, y + j, size, size);
                 }

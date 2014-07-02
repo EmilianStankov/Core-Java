@@ -24,7 +24,7 @@ public class PaintController {
                 super.mouseClicked(e);
                 // Sprite sprite = new DotSprite(e.getX(), e.getY(), 100,
                 // Color.MAGENTA);
-                Sprite sprite = new SpraySprite(e.getX(), e.getY(), 1, 200, Color.MAGENTA);
+                Sprite sprite = new SpraySprite(e.getX(), e.getY(), 1, 100, Color.MAGENTA);
                 window.addSprite(sprite);
                 window.repaint();
             }
