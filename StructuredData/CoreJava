@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<coreJavaCourse>
+    <enrolledStudents>
+        <studentId>8</studentId>
+        <name>Pesho</name>
+    </enrolledStudents>
+    <enrolledStudents>
+        <studentId>8</studentId>
+        <name>Pesho</name>
+    </enrolledStudents>
+    <courseId>1</courseId>
+    <courseName>Core Java</courseName>
+</coreJavaCourse>
