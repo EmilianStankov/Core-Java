@@ -22,13 +22,13 @@ public class WebCrawler {
             contents += inputLine + "\n";
         }
         if (contents.contains(needle)) {
-            System.out.println(contents);
+            System.out.println(url);
         } else {
             for (String link : getAllLinks(contents)) {
-                if (!link.contains("index.html") && !link.contains("http://") && !link.contains("https://")) {
-                    if (!visited.contains(new URL(url.toString() + link))) {
+                if (!link.endsWith("index.html") && !link.contains("http://") && !link.contains("https://")) {
+                    if (!visited.contains(new URL(url.toString() + link).toString())) {
                         crawl(new URL(url.toString() + link), needle);
-                        visited.add(url.toString() + link);
+                        visited.add(new URL(url.toString() + link).toString());
                     }
                 }
             }
