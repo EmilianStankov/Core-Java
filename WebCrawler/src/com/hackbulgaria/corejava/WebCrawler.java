@@ -10,7 +10,10 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class WebCrawler {
+    private static List<String> visited = new ArrayList<>();
+
     public static void crawl(URL url, String needle) throws IOException {
+        visited.add(url.toString());
         BufferedReader in = new BufferedReader(new InputStreamReader(url.openStream()));
 
         String contents = "";
@@ -23,7 +26,10 @@ public class WebCrawler {
         } else {
             for (String link : getAllLinks(contents)) {
                 if (!link.contains("index.html") && !link.contains("http://") && !link.contains("https://")) {
-                    crawl(new URL(url.toString() + link), needle);
+                    if (!visited.contains(new URL(url.toString() + link))) {
+                        crawl(new URL(url.toString() + link), needle);
+                        visited.add(url.toString() + link);
+                    }
                 }
             }
         }
