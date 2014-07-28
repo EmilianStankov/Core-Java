@@ -33,6 +33,7 @@ public class Aggregator extends HttpServlet {
 		try {
 			response.setContentType("text/html; charset=UTF-8");
 			RSSParser.parseRSS(new URL("http://www.dnevnik.bg/rssc/?rubrid=1657"), response);
+			RSSParser.parseRSS(new URL("http://www.sportal.bg/uploads/rss_category_0.xml"), response);
 		} catch (IllegalArgumentException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
