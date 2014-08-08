@@ -49,7 +49,11 @@ public class Problems2Impl implements Problems2 {
 
     @Override
     public long getLargestPalindrome(long N) {
-        // TODO Auto-generated method stub
+        for(Long i = N; i >= 0; i--){
+            if(isPalindrome(i.toString())){
+                return i;
+            }
+        }
         return 0;
     }
 
@@ -80,7 +84,17 @@ public class Problems2Impl implements Problems2 {
 
     @Override
     public int getOddOccurrence(int[] array) {
-        // TODO Auto-generated method stub
+        for(int i = 0; i < array.length; i++) {
+            int occurence = 1;
+            for(int j = 0; j < array.length; j++) {
+                if(array[i] == array[j] && i != j) {
+                    occurence++;
+                }
+            }
+            if(occurence % 2 == 1) {
+                return array[i];
+            }
+        }
         return 0;
     }
 
@@ -133,8 +147,13 @@ public class Problems2Impl implements Problems2 {
 
     @Override
     public String copyEveryChar(String input, int k) {
-        // TODO Auto-generated method stub
-        return null;
+        String result = "";
+        for(int i = 0; i < input.length(); i++) {
+            for(int j = 0; j < k; j++) {
+                result += input.charAt(i);
+            }
+        }
+        return result;
     }
 
     @Override

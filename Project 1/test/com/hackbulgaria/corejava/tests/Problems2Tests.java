@@ -239,7 +239,7 @@ public class Problems2Tests {
     @Test
     public void testCopyEveryCharacter() {
         assertEquals("ttwwrr", problems2.copyEveryChar("twr", 2));
-        assertEquals("ttt   www   rrr", problems2.copyEveryChar("t w r", 2));
+        assertEquals("ttt   www   rrr", problems2.copyEveryChar("t w r", 3));
     }
 
     @Test
